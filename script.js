@@ -85,3 +85,16 @@ contenedor.innerHTML+=`
 `;
 
 });
+let carrito=0;
+
+document.querySelectorAll(".producto button").forEach(boton=>{
+
+boton.addEventListener("click",()=>{
+
+carrito++;
+
+document.getElementById("contador").innerText=carrito;
+
+});
+
+});
