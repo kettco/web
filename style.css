@@ -282,3 +282,108 @@ color:#3d291b;
 footer h3{
 margin-bottom:15px;
 }
+.productos-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.producto{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+transition:.35s;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+cursor:pointer;
+
+}
+
+.producto:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.producto img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.producto:hover img{
+
+transform:scale(1.08);
+
+}
+
+.producto h3{
+
+padding:18px;
+
+font-size:24px;
+
+color:#4b2f24;
+
+}
+
+.producto p{
+
+padding:0 18px;
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#8b5e3c;
+
+}
+
+.producto button{
+
+margin:20px;
+
+width:calc(100% - 40px);
+
+padding:15px;
+
+background:#4b2f24;
+
+color:white;
+
+border:none;
+
+border-radius:15px;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.producto button:hover{
+
+background:#8b5e3c;
+
+}
